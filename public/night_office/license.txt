@@ -1,0 +1,11 @@
+Model Information:
+* title:	Late Night Office
+* source:	https://sketchfab.com/3d-models/late-night-office-29986085d4a6477c9dda61e63327bdfc
+* author:	Minh Nguyen (https://sketchfab.com/Minh_Nguyen_2004)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Late Night Office" (https://sketchfab.com/3d-models/late-night-office-29986085d4a6477c9dda61e63327bdfc) by Minh Nguyen (https://sketchfab.com/Minh_Nguyen_2004) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

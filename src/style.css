@@ -1,0 +1,308 @@
+/* General Styling */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the canvas stays in the background */
+}
+
+body {
+  background-color: black;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Allow vertical scrolling if needed */
+}
+
+/* Popup Container */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Browser Window Style */
+.browser-window {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  background: #000;
+  margin: auto; /* Center horizontally and vertically */
+  position: relative;
+  overflow: auto; /* Ensure content is scrollable if necessary */
+}
+
+/* Header */
+.browser-header {
+  background-color: #333;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+/* Toolbar Buttons */
+.browser-toolbar button {
+  background-color: #666;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.browser-toolbar button:hover {
+  background-color: #444;
+}
+
+.browser-tabs {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.browser-buttons button {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.browser-buttons button:hover {
+  background-color: #444;
+}
+
+/* Close, Minimize, Maximize Buttons */
+.browser-buttons button {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+.browser-buttons button.minimize {
+  background-color: yellow;
+}
+
+.browser-buttons button.maximize {
+  background-color: green;
+}
+
+.browser-buttons button.close {
+  background-color: red;
+}
+
+/* Body Styling */
+.browser-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all items horizontally */
+  justify-content: center; /* Center all items vertically */
+  text-align: center; /* Center text */
+  color: #00ff00; /* Add text color */
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block; /* Horizontal navigation */
+  margin: 0 10px;
+}
+
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center; /* Center text */
+}
+
+section h2, section h3 {
+  color: #00ff00;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #ff00ff, 0 0 25px #ff00ff, 0 0 5px #ff00ff;
+}
+
+section p {
+  margin-bottom: 15px;
+  color: #00ff00; /* Ensure text is visible */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  text-align: center; /* Center footer text */
+}
+
+/* Retro Effect for Links */
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* folder */
+/* General settings */
+body {
+  font-family: 'Georgia', serif;
+  background: #20232a; /* Dark background to set a more moody tone */
+  color: white;
+}
+
+/* Folder display container */
+.folder_display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%; 
+  height: 90%;
+  margin: 5%;  
+  background: rgba(35, 41, 45, 0.9);  /* Dark background with slight transparency */
+  border: 2px solid #2c2f36;  /* Slightly darker border */
+  border-radius: 10px;  
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);  /* More subtle, diffused shadow */
+  overflow-y: auto; 
+  display: none; 
+  z-index: 9999;  
+  font-family: 'Georgia', serif;  
+  color: white;
+}
+
+/* Header styles */
+.folder_display header {
+  padding: 20px;
+  background: rgba(28, 34, 40, 0.8);  /* Dark, semi-transparent header */
+  border-bottom: 1px solid #444b57;  /* Subtle border for separation */
+  text-align: center;
+}
+
+.folder_display header h1, 
+.folder_display header h2, 
+.folder_display section h2 {
+  font-size: 2rem;  
+  color: #f1f1f1;  
+  text-align: left;  
+  margin-bottom: 12px;  
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Slight shadow to add depth */
+}
+
+/* Section and text styles */
+.folder_display section ul, 
+.folder_display section ol {
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.folder_display section p, 
+.folder_display section li {
+  line-height: 1.8;  
+  font-size: 1rem;  
+  color: #e2e2e2;  /* Softer text color for readability */
+}
+
+/* Specific styling for h3 in sections to avoid overlap */
+.folder_display section > h3 {
+  font-size: 1.3rem;  /* Slightly smaller than h1 and h2 */
+  color: #f1f1f1;  /* Light color to match the overall theme */
+  margin-bottom: 8px;  /* Space between h3 and the following content */
+  text-align: left;  /* Ensure left alignment */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+}
+
+
+.folder_display section li {
+  margin-bottom: 8px;  /* Add space between list items */
+}
+
+/* Exit button styles */
+#exitbtn, #exitbtn1, #exitbtn2, #exitbtn3, #exitbtn4, #exitbtn5, #exitbtn6 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #e2a000;  /* Arcane-inspired golden accent */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.3s ease;
+}
+
+#exitbtn:hover, #exitbtn1:hover, #exitbtn2:hover, #exitbtn3:hover, #exitbtn4:hover, #exitbtn5:hover, #exitbtn6:hover {
+  background-color: #b87c00;  /* Darker gold on hover */
+}
+
+/* Background texture */
+body .folder_display {
+  background: rgba(35, 41, 45, 0.95) url('https://www.transparenttextures.com/patterns/white-paper.png');  
+  background-blend-mode: overlay;  
+}
+
+/* Additional details for button interaction and container style */
+.folder_display #exitbtn:active, #exitbtn1:active, #exitbtn2:active, #exitbtn3:active, #exitbtn4:active, #exitbtn5:active, #exitbtn6:active {
+  transform: scale(0.95);  /* Slight button shrink on click */
+}
+
+/* position */
+/* Overlay container */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+}
+
+/* Paragraph text inside the overlay */
+.overlay p {
+  margin: 20px;
+  font-size: 20px;
+}
+
