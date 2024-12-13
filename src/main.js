@@ -174,7 +174,7 @@ window.addEventListener('resize', () => {
 //load model
 const gltfLoader = new GLTFLoader();
 
-gltfLoader.load('/night_office/scene.gltf', (gltf) => {
+gltfLoader.load('./public/night_office/scene.gltf', (gltf) => {
   const office = gltf.scene;
   scene.add(office);
   console.log(scene); // Log entire scene object to the console
